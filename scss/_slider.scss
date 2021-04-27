@@ -1,5 +1,106 @@
-.slider{
-	background: url(../images/dest/back1.jpg) no-repeat 100% 0;
-	background-size: cover;
-	min-height: 100vh;
+.container {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin:  0 auto;
 }
+
+.slider {
+    background: url(../images/dest/back1.jpg) 50%/cover no-repeat;
+    min-height: 100vh;
+    color: #ffffff;
+
+    &__title {
+        font-family: Raleway;
+        font-size: 36px;
+        font-weight: 500;
+    }
+
+    &__subtitle {
+        font-family: Raleway;
+        font-size: 52px;
+        font-weight: 800;
+        padding-bottom: 15px;
+    }
+
+    &__text {
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 1.5;
+        margin: 0 0 50px 0;
+        max-width: 562px;
+        text-align: center;
+    }
+
+
+    &__btn-wrapper a{
+        font-family: Raleway;
+        font-size: 14px;
+        font-weight: 800;
+        line-height: 1.64;
+        color: #ffffff;
+        box-shadow: inset 0px -3px 0 0 #7C95A7;
+        background-color: #6D6792;
+        padding: 21px 39px 21px 37px;
+        border-radius: 3px;
+        text-transform: uppercase;
+		transition-duration: .2s;
+
+        &:hover {
+            padding: 25px 50px;
+            background-color: #DEC675;  
+
+        }
+    }
+
+
+    &__pagination {
+    }
+
+    &__prev {
+        color: #d3c1ad;
+        transition-property: all;
+        transition-duration: 0.1s;
+        transition-delay: 0s;
+
+		
+        &:hover {
+            color: #548AC8;
+        }
+    }
+
+    &__next {
+        color: #d3c1ad;
+        transition-property: all;
+        transition-duration: 0.1s;
+        transition-delay: 0s;
+
+        &:hover {
+            color: #548AC8;
+        }
+    }
+}
+
+
+.slider-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 380px 0 379px 0;
+}
+.swiper-pagination {
+
+    &-bullet {
+        opacity: 0.5;
+        background-color: #ffffff;
+        width: 10px;
+        height: 10px;
+    }
+     
+    &-bullet-active {
+        border: solid 1px #d3c1ad;
+        background-color: transparent;
+    }
+}
+
